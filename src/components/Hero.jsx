@@ -52,7 +52,7 @@ const Hero = () => {
             variants={container(0.5)}
             initial="hidden"
             animate="visible"
-              href="https://drive.google.com/file/d/1j3hiiLlU6XIe4Gf1v31o5Au_LncrC5yU/view?usp=sharing"
+              href="https://drive.google.com/file/d/1tkz3nhRPgJ0rNmRQstKVfAAO09HGpyC6/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-10"
