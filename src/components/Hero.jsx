@@ -54,7 +54,7 @@ const Hero = () => {
             variants={container(0.5)}
             initial="hidden"
             animate="visible"
-              href="https://drive.google.com/file/d/18LI-jkmIyW5ECnuYqtUGFpqXOkQ5PaFu/view?usp=sharing"
+              href="https://github.com/spenelope/resume/blob/main/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-10"
