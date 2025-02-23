@@ -54,7 +54,7 @@ const Hero = () => {
             variants={container(0.5)}
             initial="hidden"
             animate="visible"
-              href="https://drive.google.com/file/d/18LI-kmIyW5ECnuYqtUGFpqXOkQ5PaFu/view?usp=sharing"
+              href="https://drive.google.com/file/d/18LI-jkmIyW5ECnuYqtUGFpqXOkQ5PaFu/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-10"
@@ -65,7 +65,25 @@ const Hero = () => {
             </button>
             </motion.a>
 
-            { /* <motion.div
+            {/* 
+            <motion.a 
+            variants={container(0.5)}
+            initial="hidden"
+            animate="visible"
+              href="https://drive.google.com/file/d/18LI-kmIyW5ECnuYqtUGFpqXOkQ5PaFu/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-10"
+            >            
+            <button className="mt-4 rounded bg-purple-700 px-4 py-2 text-white hover:bg-purple-800 transition-colors">
+              View Resume
+                <LuExternalLink />
+            </button>
+            </motion.a>
+            */}
+
+             {/* 
+              <motion.div
               variants={container(1.5)}
               initial="hidden"
               animate="visible"
@@ -79,8 +97,8 @@ const Hero = () => {
                 <FiDownload className="mr-2 text-lg" />
                 Download CV
               </a>
-            </motion.div>
-              */}
+            </motion.div> 
+            */}
 
           </div>
         </div>
