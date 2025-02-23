@@ -31,7 +31,6 @@ const Hero = () => {
             >
               Penelope Sanchez
             </motion.h1>
-
             <motion.span
               variants={container(0.5)}
               initial="hidden"
@@ -40,7 +39,6 @@ const Hero = () => {
             >
               Full Stack Developer
             </motion.span>
-
             <motion.p
               variants={container(1)}
               initial="hidden"
@@ -54,7 +52,7 @@ const Hero = () => {
             variants={container(0.5)}
             initial="hidden"
             animate="visible"
-              href="https://github.com/spenelope/resume/blob/main/Resume.pdf"
+              href="https://drive.google.com/file/d/18LI-jkmIyW5ECnuYqtUGFpqXOkQ5PaFu/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-10"
@@ -65,24 +63,7 @@ const Hero = () => {
             </button>
             </motion.a>
 
-            {/* 
-            <motion.a 
-            variants={container(0.5)}
-            initial="hidden"
-            animate="visible"
-              href="https://drive.google.com/file/d/18LI-kmIyW5ECnuYqtUGFpqXOkQ5PaFu/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-10"
-            >            
-            <button className="mt-4 rounded bg-purple-700 px-4 py-2 text-white hover:bg-purple-800 transition-colors">
-              View Resume
-                <LuExternalLink />
-            </button>
-            </motion.a>
-            */}
-
-             {/* 
+            { /* 
               <motion.div
               variants={container(1.5)}
               initial="hidden"
@@ -97,8 +78,8 @@ const Hero = () => {
                 <FiDownload className="mr-2 text-lg" />
                 Download CV
               </a>
-            </motion.div> 
-            */}
+            </motion.div>
+              */}
 
           </div>
         </div>
