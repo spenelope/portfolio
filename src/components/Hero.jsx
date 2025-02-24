@@ -1,10 +1,8 @@
 import { HERO_CONTENT } from "../constants";
 // import profilePic from "../assets/profile.jpg";
-// import { FiDownload } from "react-icons/fi";
+import { FiDownload } from "react-icons/fi";
 import { motion } from "framer-motion";
-// import resume from "../assets/Resume.pdf"
-import { LuExternalLink } from "react-icons/lu";
-import HeroBgAnimation from "./HeroBgAnnimation"
+import resume from "../assets/Resume.pdf"
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -45,26 +43,13 @@ const Hero = () => {
               animate="visible"
               className="my-2 max-w-xl py-6 font-light tracking-tighter"
             >
+
+               
               {HERO_CONTENT}
             </motion.p>
 
-            <motion.a 
-            variants={container(0.5)}
-            initial="hidden"
-            animate="visible"
-              href="https://drive.google.com/file/d/18LI-jkmIyW5ECnuYqtUGFpqXOkQ5PaFu/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-10"
-            >            
-            <button className="mt-4 rounded bg-purple-700 px-4 py-2 text-white hover:bg-purple-800 transition-colors">
-              View Resume
-                <LuExternalLink />
-            </button>
-            </motion.a>
-
-            { /* 
-              <motion.div
+            
+            <motion.div
               variants={container(1.5)}
               initial="hidden"
               animate="visible"
@@ -72,23 +57,30 @@ const Hero = () => {
             >
               <a
                 href={resume}
-                download="Penelope_Sanchez_Resume.pdf"
+                download="Resume.pdf"
                 className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-purple-500 to-indigo-600 px-6 py-3 text-white font-medium hover:from-purple-600 hover:to-indigo-700 hover:shadow-lg transition-all duration-300"
               >
                 <FiDownload className="mr-2 text-lg" />
                 Download CV
               </a>
             </motion.div>
-              */}
-
           </div>
         </div>
 
+        {/*
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center">
-          <HeroBgAnimation />
+            <motion.img
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 1.2 }}
+              src={profilePic}
+              alt="Jonghyuk"
+            />
           </div>
         </div>
+        */}
+
       </div>
     </div>
   );
