@@ -1,27 +1,27 @@
 import { Button } from "@/components/ui/button";
-import beachCouple from "@/assets/beach-couple.jpg";
-import lifestyleFriends from "@/assets/lifestyle-friends.jpg";
-import familyHome from "@/assets/family-home.jpg";
+import image02 from "@/assets/image02.jpg";
+import image03 from "@/assets/image03.jpg";
+import image04 from "@/assets/image04.jpg";
 import { useScrollReveal } from "./useScrollReveal";
 
 const benefits = [
   {
-    image: beachCouple,
-    title: "¡Di sí a las vacaciones que deseas!",
-    desc: "Obtén 10% de bonificación comprando desde 12 MSI* con tu Tarjeta de Crédito Banamex del 19 al 23 de marzo.",
-    cta: "¡Regístrate!",
+    image: image02,
+    title: "Pharmaceutical Science",
+    desc: "Drug development, formulation, compounding, specialized pharmaceuticals, clinical research operations, process optimization, and medical device design and evaluation.",
+    cta: "Learn More",
   },
   {
-    image: lifestyleFriends,
-    title: "Tu nómina en Banamex te hace decir \"guau\".",
-    desc: "Con tu nómina tienes un paquete de asistencias que te protege a ti y a tu mascota.",
-    cta: "Me interesa",
+    image: image03,
+    title: "Dental and Oral Health",
+    desc: "Multi location dental service organizations, oral and maxillofacial surgery, periodontics, implant care, orthodontics, prosthodontics, endodontics.",
+    cta: "Learn More",
   },
   {
-    image: familyHome,
-    title: "¡Paga tus servicios a meses sin intereses!",
-    desc: "Tú eliges cómo pagar el predial, agua, tenencia o refrendo con tu Tarjeta de Crédito Banamex.",
-    cta: "Me interesa",
+    image: image04,
+    title: "Medical and Healthcare Practices",
+    desc: "Surgical centers, specialty clinics, regenerative medicine, biologics, diagnostic and treatment protocol development, and practice innovation.",
+    cta: "Learn More",
   },
 ];
 
@@ -36,7 +36,7 @@ export default function ClientBenefits() {
             isVisible ? "animate-fade-in-up" : "opacity-0"
           }`}
         >
-          Ser cliente tiene sus ventajas.
+          Experience Across Research-Driven Industries.
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

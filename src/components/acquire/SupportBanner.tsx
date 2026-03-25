@@ -27,22 +27,24 @@ export default function SupportBanner() {
           {/* Content */}
           <div className="flex-1 text-center lg:text-left">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight">
-              Aquí. Para ti.
+             Customer
               <br />
-              <span className="text-primary">Siempre.</span>
+              <span className="text-primary">Service.</span>
             </h2>
             <p className="text-muted-foreground mt-3 mb-6">
-              Llámanos. Las 24 horas del día.
+             
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
               <Button variant="cta" size="lg" className="gap-2">
                 <Phone className="w-4 h-4" />
-                55 1226 2639
+                801-228-1941
               </Button>
             </div>
           </div>
 
+
           {/* Quick links */}
+          {/*
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3 p-4 rounded-xl bg-muted hover:bg-muted/80 transition-colors cursor-pointer">
               <Shield className="w-5 h-5 text-primary shrink-0" />
@@ -59,6 +61,7 @@ export default function SupportBanner() {
               </div>
             </div>
           </div>
+          */}
         </div>
       </div>
     </section>

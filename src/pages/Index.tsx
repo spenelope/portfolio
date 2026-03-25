@@ -1,27 +1,27 @@
-import Navbar from "@/components/banamex/Navbar";
-import HeroCarousel from "@/components/banamex/HeroCarousel";
-import CreditCardsPromo from "@/components/banamex/CreditCardsPromo";
-import ProductsGrid from "@/components/banamex/ProductsGrid";
-import ClientBenefits from "@/components/banamex/ClientBenefits";
-import CreditsSection from "@/components/banamex/CreditsSection";
-import CardShowcase from "@/components/banamex/CardShowcase";
-import HelpSection from "@/components/banamex/HelpSection";
-import SupportBanner from "@/components/banamex/SupportBanner";
-import Footer from "@/components/banamex/Footer";
+import Navbar from "@/components/acquire/Navbar";
+import HeroCarousel from "@/components/acquire/HeroCarousel";
+// import CreditCardsPromo from "@/components/acquire/Promo";
+import ProductsGrid from "@/components/acquire/ProductsGrid";
+import ClientBenefits from "@/components/acquire/Benefits";
+import CreditsSection from "@/components/acquire/Section";
+// import CardShowcase from "@/components/acquire/Showcase";
+import HelpSection from "@/components/acquire/HelpSection";
+import SupportBanner from "@/components/acquire/SupportBanner";
+// import Footer from "@/components/acquire/Footer";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroCarousel />
-      <CreditCardsPromo />
+      {/* <CreditCardsPromo /> */}
       <ProductsGrid />
       <ClientBenefits />
       <CreditsSection />
-      <CardShowcase />
+      {/* <CardShowcase /> */}
       <HelpSection />
       <SupportBanner />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

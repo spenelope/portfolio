@@ -67,12 +67,14 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-primary-foreground/40">
-            © 2026 Banco Nacional de México, S.A. Todos los derechos reservados.
+            © 2026 
           </p>
+          {/*
           <div className="flex gap-6 text-xs text-primary-foreground/40">
             <a href="#" className="hover:text-primary-foreground/70 transition-colors">Aviso de Privacidad</a>
             <a href="#" className="hover:text-primary-foreground/70 transition-colors">Términos y Condiciones</a>
           </div>
+          */}
         </div>
       </div>
     </footer>

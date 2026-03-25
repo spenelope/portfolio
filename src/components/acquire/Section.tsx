@@ -4,11 +4,12 @@ import { useScrollReveal } from "./useScrollReveal";
 
 const creditProducts = [
   {
-    title: "Simulador Crédito Hipotecario",
-    desc: "Cambia tu historia hoy, simula tu crédito.",
-    bullets: ["Simula tu crédito en línea y descubre cuánto podemos prestarte.", "Elige tus plazos a 10, 15 o 20 años"],
-    cta: "Conócelo",
+    title: "Tesminonial",
+    desc: "",
+    bullets: [""],
+    cta: "",
   },
+  /*
   {
     title: "Crédito Hipotecario Banamex",
     desc: "Haz realidad el hogar que imaginas.",
@@ -21,6 +22,7 @@ const creditProducts = [
     bullets: ["Solicita desde $2,000 hasta $1,500,000."],
     cta: "Me interesa",
   },
+  */
 ];
 
 export default function CreditsSection() {
@@ -34,7 +36,7 @@ export default function CreditsSection() {
             isVisible ? "animate-fade-in-up" : "opacity-0"
           }`}
         >
-          Un crédito <span className="text-banamex-teal">para cada necesidad.</span>
+          Client <span className="text-banamex-teal"> Testimonials.</span>
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

@@ -2,10 +2,11 @@ import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import heroCards from "@/assets/hero-cards.png";
-import beachCouple from "@/assets/beach-couple.jpg";
+import number from "@/assets/number.jpg";
 
 const slides = [
-  {
+  /*
+    {
     id: 1,
     badge: "Haz match con tu tarjeta de crédito ideal",
     title: "¡Solicita tu tarjeta\ny di sí a las promos\nde 120 horas!",
@@ -13,14 +14,15 @@ const slides = [
     image: heroCards,
     promoTag: "120 horas",
   },
+  */
   {
     id: 2,
-    badge: "Promoción especial",
-    title: "¡Di sí a las vacaciones\nque quieres!",
-    subtitle: "Paga a meses y gana una bonificación por tus compras.",
-    cta: "Regístrate ahora",
-    image: beachCouple,
-    stat: { value: "10%", desc: "de bonificación en\ncompras a partir de", highlight: "12 MSI*" },
+    badge: "",
+    title: "R&D Credit Deadline",
+    subtitle: "File by July 6, 2026 to claim 2022–2024 credits.",
+    cta: "Learn More",
+    image: number,
+    stat: { value: "", desc: "Secure Your 2022–2024 Credits.", highlight: "" },
   },
 ];
 

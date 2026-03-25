@@ -3,10 +3,10 @@ import { CreditCard, Landmark, Shield, Calculator } from "lucide-react";
 import { useScrollReveal } from "./useScrollReveal";
 
 const helpItems = [
-  { icon: Calculator, label: "Ver el tipo de cambio" },
-  { icon: Landmark, label: "Quiero abrir una cuenta" },
-  { icon: Shield, label: "Quiero cotizar un seguro" },
-  { icon: CreditCard, label: "Quiero mi tarjeta de crédito" },
+  { icon: Calculator, label: "" },
+  { icon: Landmark, label: "" },
+  { icon: Shield, label: "" },
+  { icon: CreditCard, label: "" },
 ];
 
 export default function HelpSection() {
@@ -20,7 +20,7 @@ export default function HelpSection() {
             isVisible ? "animate-fade-in-up" : "opacity-0"
           }`}
         >
-          ¿Cómo podemos ayudarte?
+          Strategic Partners
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
           {helpItems.map((item, i) => (

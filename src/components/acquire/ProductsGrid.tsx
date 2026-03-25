@@ -1,37 +1,46 @@
 import { Button } from "@/components/ui/button";
-import lifestyleFriends from "@/assets/lifestyle-friends.jpg";
-import familyHome from "@/assets/family-home.jpg";
-import heroCards from "@/assets/hero-cards.png";
-import beachCouple from "@/assets/beach-couple.jpg";
-import { useScrollReveal } from "./useScrollReveal";
+import image05 from "@/assets/image05.jpg";
+import image06 from "@/assets/image06.jpg";
+import image07 from "@/assets/image07.jpg";
+import image08 from "@/assets/image08.jpg";
+import { useScrollReveal } from "./useScrollReveal.ts";
 
-const products = [
+type Product = {
+  image: any;
+  label: string;
+  cta: string;
+  highlight?: string;
+  sublabel?: string;
+  desc?: string;
+};
+
+const products: Product[] = [
   {
-    image: lifestyleFriends,
-    label: "Cuenta Switch",
-    sublabel: "Banamex",
-    desc: "Lista en minutos. Abre tu cuenta desde tu celular.",
-    cta: "Descubre Switch",
+    image: image05,
+    label: " R&D TaxOps",
+    // sublabel: "Banamex",
+    // desc: "Lista en minutos. Abre tu cuenta desde tu celular.",
+    cta: "Learn More",
   },
   {
-    image: familyHome,
-    label: "Seguro de Casa BNMX",
-    desc: "Asegura cada rincón con 10% de descuento y MSI.*",
-    cta: "Cotizar mi seguro",
+    image: image06,
+    label: "Industries",
+    // desc: "Asegura cada rincón con 10% de descuento y MSI.*",
+    cta: "Learn More",
   },
   {
-    image: heroCards,
-    label: "Tarjetas de Crédito Banamex",
-    desc: "Elige la tarjeta que te dará acceso a beneficios y promociones.",
-    cta: "Quiero mi tarjeta",
-    highlight: "¡Solicítala ahora!",
+    image: image07,
+    label: "Compliance",
+   // desc: "Elige la tarjeta que te dará acceso a beneficios y promociones.",
+    cta: "Learn More  ",
+    // highlight: "Learn More",
   },
   {
-    image: beachCouple,
-    label: "Tarjeta de Crédito",
-    sublabel: "LineUp Banamex",
-    desc: "¡Compra tus boletos antes que nadie con las Preventas LineUp!",
-    cta: "Solicítala",
+    image: image08,
+    label: "Our Role",
+    // sublabel: "LineUp Banamex",
+    // desc: "¡Compra tus boletos antes que nadie con las Preventas LineUp!",
+    cta: "Learn More",
   },
 ];
 
@@ -46,10 +55,13 @@ export default function ProductsGrid() {
             isVisible ? "animate-fade-in-up" : "opacity-0"
           }`}
         >
-          Hazlo a tu ritmo, en tu momento.
+          
+          {/* Services.
+          */}
           <br />
-          <span className="text-banamex-teal">¡Solicítalos en línea!</span>
+          <span className="text-banamex-teal">Services</span>
         </h2>
+        
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {products.map((p, i) => (
