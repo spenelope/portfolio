@@ -1,0 +1,6 @@
+﻿# Ignore IDE/workspace and build folders
+.workspace/
+.vscode/
+node_modules/
+dist/
+*.tsbuildinfo

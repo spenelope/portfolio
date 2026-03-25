@@ -1,0 +1,131 @@
+/* 1️⃣ Import Google Fonts first */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* 2️⃣ Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3️⃣ Root CSS variables */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 200 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 15% 15%;
+
+    /* Banamex dark teal */
+    --primary: 183 100% 17%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 190 30% 95%;
+    --secondary-foreground: 183 100% 17%;
+
+    --muted: 200 20% 96%;
+    --muted-foreground: 200 10% 45%;
+
+    /* Banamex red accent */
+    --accent: 348 100% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 20% 90%;
+    --input: 200 20% 90%;
+    --ring: 183 100% 17%;
+
+    --radius: 0.5rem;
+
+    /* Custom Banamex tokens */
+    --banamex-teal: 183 100% 17%;
+    --banamex-teal-light: 185 40% 92%;
+    --banamex-red: 348 100% 45%;
+    --banamex-gold: 40 80% 55%;
+    --banamex-dark: 200 20% 12%;
+    --banamex-gray: 200 10% 50%;
+    --banamex-light-gray: 200 15% 97%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+/* 4️⃣ Base styles */
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+
+  p {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+  }
+}
+
+/* 5️⃣ Components */
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-banamex {
+    @apply max-w-[1280px] mx-auto;
+  }
+}
+
+/* 6️⃣ Utilities */
+@layer utilities {
+  .text-banamex-teal { color: hsl(var(--banamex-teal)); }
+  .bg-banamex-teal { background-color: hsl(var(--banamex-teal)); }
+  .text-banamex-red { color: hsl(var(--banamex-red)); }
+  .bg-banamex-red { background-color: hsl(var(--banamex-red)); }
+  .bg-banamex-teal-light { background-color: hsl(var(--banamex-teal-light)); }
+  .bg-banamex-dark { background-color: hsl(var(--banamex-dark)); }
+  .bg-banamex-light-gray { background-color: hsl(var(--banamex-light-gray)); }
+}
+
+/* 7️⃣ Scroll reveal animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); filter: blur(4px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); filter: blur(4px); }
+  to { opacity: 1; transform: translateX(0); filter: blur(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(20px); filter: blur(4px); }
+  to { opacity: 1; transform: translateX(0); filter: blur(0); }
+}
+
+.animate-fade-in-up { animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+.animate-slide-in-left { animation: slideInLeft 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+.animate-slide-in-right { animation: slideInRight 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+
+.animation-delay-100 { animation-delay: 100ms; }
+.animation-delay-200 { animation-delay: 200ms; }
+.animation-delay-300 { animation-delay: 300ms; }
+.animation-delay-400 { animation-delay: 400ms; }
